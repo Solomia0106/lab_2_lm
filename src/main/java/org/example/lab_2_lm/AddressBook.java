@@ -1,0 +1,7 @@
+package org.example.lab_2_lm;
+
+public interface AddressBook {
+    void add(Person person);
+    void update(Person person);
+    void delete(Person person);
+}

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox stylesheets="@my.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lab_2_lm.TestController">
+
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="733.0">
+         <children>
+            <VBox prefHeight="432.0" prefWidth="163.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="207.0" text="CheckBox" textAlignment="RIGHT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="63.0" prefWidth="182.0" text="Які з наведених чисел є парними?" textAlignment="JUSTIFY" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="ch4" mnemonicParsing="false" text="4">
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="ch7" mnemonicParsing="false" text="7">
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="ch10" mnemonicParsing="false" text="10">
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox fx:id="ch24" mnemonicParsing="false" text="24">
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <Button fx:id="btnCheckBox" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#checkAnswer" text="Відповісти">
+                     <VBox.margin>
+                        <Insets left="60.0" top="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="lblCheckBoxResult" text="Label">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="381.0" prefWidth="193.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="192.0" text="ChoiseBox">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="61.0" prefWidth="173.0" text="Число 25 ділиться на 5 без залишку." wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ChoiceBox fx:id="choiceDiv" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <Button fx:id="btnChoice" mnemonicParsing="false" onAction="#checkChoiceAnswer" prefHeight="25.0" prefWidth="76.0" text="Відповісти">
+                     <VBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="lblChoiceResult" text="Label">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="189.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="186.0" text="ComboBox">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="56.0" prefWidth="158.0" text="Корінь числа 81 дорівнює…" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ComboBox fx:id="comboRoot" prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Button fx:id="btnCombo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#checkComboAnswer" text="Відповісти  ">
+                     <VBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="lblComboResult" text="Label">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="194.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="83.0" prefWidth="183.0" text="RadioButton">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="Скільки градусів має прямий кут?" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <RadioButton fx:id="rb45" mnemonicParsing="false" text="45">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton mnemonicParsing="false" text="60">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="rb90" mnemonicParsing="false" text="90">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="rb120" mnemonicParsing="false" text="120">
+                     <VBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </VBox.margin>
+                  </RadioButton>
+                  <Button fx:id="btnRadio" mnemonicParsing="false" onAction="#checkRadioAnswer" text="Відповісти">
+                     <VBox.margin>
+                        <Insets left="60.0" top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label fx:id="lblRadioResult" text="Label" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox prefHeight="89.0" prefWidth="733.0">
+         <children>
+            <Button fx:id="btnTotal" mnemonicParsing="false" onAction="#showTotal" text="Підсумок">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="lblTotal" text="Label">
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Accordion />
+   </children>
+</VBox>
