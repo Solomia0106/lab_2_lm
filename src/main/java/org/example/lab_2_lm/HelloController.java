@@ -36,6 +36,8 @@ public class HelloController {
     private Label labelCount;
     @FXML
     private Button btnText;
+    @FXML
+    private Button btnData;
 
     private final CollectionAddressBook addressBookImpl = new CollectionAddressBook();
 
@@ -133,6 +135,7 @@ public class HelloController {
             e.printStackTrace();
         }
     }
+
     @FXML
     private void openTextWindow() {
         try {
@@ -149,4 +152,20 @@ public class HelloController {
         }
     }
 
+    @FXML
+    private void openDataWindow() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("data.fxml")); // твій FXML
+            Stage stage = new Stage();
+            stage.setScene(new Scene(loader.load(), 600, 400));
+            stage.setTitle("Дата");
+            stage.setResizable(false);
+            stage.initModality(Modality.WINDOW_MODAL);
+            stage.initOwner(btnData.getScene().getWindow()); // батьківське вікно
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
